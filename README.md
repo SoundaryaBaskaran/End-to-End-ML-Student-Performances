@@ -36,15 +36,13 @@ The data consists of 8 column and 1000 rows.
 2. Data Transformation :
 
     - In this phase a ColumnTransformer Pipeline is created.
-    - For Numeric Variables first SimpleImputer is applied with strategy median , then Standard Scaling is performed on numeric data.
-    - for Categorical Variables SimpleImputer is applied with most frequent strategy, then ordinal encoding performed , after this data is scaled with Standard Scaler.
+    - For Numeric Variables , then Standard Scaling is performed on numeric data.
+    - for Categorical Variables one hot encoding performed , after this data is scaled with Standard Scaler.
     - This preprocessor is saved as pickle file.
 
 3. Model Training :
 
-    - In this phase base model is tested . The best model found was catboost regressor.
-    - After this hyperparameter tuning is performed on catboost and knn model.
-    - A final VotingRegressor is created which will combine prediction of catboost, xgboost and knn models.
+    - In this phase base model is tested . The best model found was linear regression.
     - This model is saved as pickle file.
 
 4. Prediction Pipeline :
@@ -53,7 +51,7 @@ The data consists of 8 column and 1000 rows.
 
 5. Flask App creation :
 
-    - Flask app is created with User Interface to predict the gemstone prices inside a Web Application.
+    - Flask app is created with User Interface to predict the math score inside a Web Application.
 
 
 
