@@ -52,6 +52,7 @@ The data consists of 8 column and 1000 rows.
 5. Flask App creation :
 
     - Flask app is created with User Interface to predict the math score inside a Web Application.
+      
   
 
       ![Screenshot 2024-08-20 220514](https://github.com/user-attachments/assets/13596ee2-95e9-46ca-af7c-e351bd5fbc80)
